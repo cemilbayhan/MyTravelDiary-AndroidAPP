@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.app.CommentFragment">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/newCommentGroupView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="placeNameTextView,userProfileImage,userNameTextView,publishEveryoneText,aboutFragmentTextView,startLayout,userComment,sendLink,closeFragment" />
+
+    <ImageView
+        android:id="@+id/closeOneFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_5d"
+        android:src="@drawable/ic_close"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/placeNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/text_7d"
+        android:text="Nemrud dağı milli parkı"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="@id/closeOneFragment"
+        app:layout_constraintStart_toEndOf="@id/closeOneFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/closeOneFragment"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userProfileImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/text_13d"
+        app:layout_constraintTop_toBottomOf="@id/closeOneFragment"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/text_7d"
+        android:gravity="center_horizontal"
+        android:text="CEMİL BAYHAN"
+        app:layout_constraintBottom_toBottomOf="@id/userProfileImage"
+        app:layout_constraintStart_toEndOf="@id/userProfileImage"
+        app:layout_constraintTop_toTopOf="@id/userProfileImage"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <TextView
+        android:id="@+id/publishEveryoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="3dp"
+        android:text="@string/publishEveryone"
+        app:layout_constraintStart_toStartOf="@id/userNameTextView"
+        app:layout_constraintTop_toBottomOf="@id/userNameTextView"
+
+        />
+
+    <TextView
+        android:id="@+id/aboutFragmentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/infoComment"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/startLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userProfileImage"
+        />
+
+    <LinearLayout
+        android:id="@+id/startLayout"
+        android:layout_margin="@dimen/text_5d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/aboutFragmentTextView"
+        app:layout_constraintStart_toStartOf="@id/aboutFragmentTextView"
+        app:layout_constraintEnd_toEndOf="@id/aboutFragmentTextView"
+        app:layout_constraintBottom_toTopOf="@id/userComment">
+
+        <ImageView
+            android:id="@+id/starOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_starfull" />
+
+        <ImageView
+            android:id="@+id/starTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_starfull" />
+
+        <ImageView
+            android:id="@+id/starThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_starfull" />
+
+        <ImageView
+            android:id="@+id/starFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_starfull" />
+
+        <ImageView
+            android:id="@+id/starFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_starfull" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/userComment"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:hint="@string/typeComment"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:maxLines="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startLayout"
+        app:layout_constraintBottom_toTopOf="@id/sendLink"/>
+
+    <Button
+        android:id="@+id/sendLink"
+        style="@style/buttonStyle"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/sendComment"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/userComment"
+        app:layout_constraintTop_toBottomOf="@+id/userComment"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/closeFragment"
+        style="@style/buttonStyle"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/white"
+        android:text="@string/closeDialog"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/sendLink"
+        app:layout_constraintStart_toStartOf="@+id/userComment"
+        app:layout_constraintTop_toTopOf="@+id/sendLink"
+        app:layout_constraintBottom_toBottomOf="@id/sendLink"/>
+
+    <ProgressBar
+        android:id="@+id/newCommentProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateTint="@color/lavender_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

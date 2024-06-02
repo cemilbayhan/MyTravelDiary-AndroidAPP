@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.mytraveldiary.view.splashAndOnBoard.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.mytraveldiary.view.splashAndOnBoard.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.mytraveldiary.view.app.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.mytraveldiary.view.app.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_onePlaceFragment"
+            app:destination="@id/onePlaceFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <argument
+            android:name="category"
+            app:argType="string"
+            android:defaultValue="category" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.mytraveldiary.view.app.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_onePlaceFragment"
+            app:destination="@id/onePlaceFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <argument
+            android:name="category"
+            app:argType="string"
+            android:defaultValue="category" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mytraveldiary.view.app.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_profileFragment_to_userCommentsFragment"
+            app:destination="@id/userCommentsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_profileFragment_to_newPlaceFragment"
+            app:destination="@id/newPlaceFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_adminMainFragment"
+            app:destination="@id/adminMainFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.mytraveldiary.view.app.user.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_loginFragment_to_adminMainFragment"
+            app:destination="@id/adminMainFragment"
+            app:enterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.mytraveldiary.view.app.user.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/onePlaceFragment"
+        android:name="com.example.mytraveldiary.view.app.OnePlaceFragment"
+        android:label="OnePlaceFragment" >
+        <action
+            android:id="@+id/action_onePlaceFragment_to_searchFragment"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <argument
+            android:name="mId"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_oneFoodFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_onePlaceFragment_to_placeCommentsFragment"
+            app:destination="@id/placeCommentsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <argument
+            android:name="placeName"
+            app:argType="string"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeCommentsFragment"
+        android:name="com.example.mytraveldiary.view.app.PlaceCommentsFragment"
+        android:label="PlaceCommentsFragment" >
+        <argument
+            android:name="placeID"
+            app:argType="string"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_placeCommentsFragment_to_newCommentFragment"
+            app:destination="@id/newCommentFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <argument
+            android:name="placeName"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="placeImage"
+            app:argType="string"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/userCommentsFragment"
+        android:name="com.example.mytraveldiary.view.app.UserCommentsFragment"
+        android:label="UserCommentsFragment" >
+        <argument
+            android:name="userUID"
+            android:defaultValue="null"
+            app:argType="string" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/newCommentFragment"
+        android:name="com.example.mytraveldiary.view.app.NewCommentFragment"
+        android:label="NewCommentFragment" >
+        <argument
+            android:name="placeID"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="placeName"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="userImage"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="userName"
+            app:argType="string"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_newCommentFragment_to_placeCommentsFragment"
+            app:destination="@id/placeCommentsFragment" />
+        <argument
+            android:name="placeImage"
+            app:argType="string"
+            android:defaultValue="null" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/adminMainFragment"
+        android:name="com.example.mytraveldiary.view.admin.AdminMainFragment"
+        android:label="AdminMainFragment" >
+        <action
+            android:id="@+id/action_adminMainFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <action
+            android:id="@+id/action_adminMainFragment_to_placeRequestsFragment"
+            app:destination="@id/placeRequestsFragment" />
+        <action
+            android:id="@+id/action_adminMainFragment_to_allCommentsFragment"
+            app:destination="@id/allCommentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPlaceFragment"
+        android:name="com.example.mytraveldiary.view.app.NewPlaceFragment"
+        android:label="NewPlaceFragment" >
+        <argument
+            android:name="userUID"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="userName"
+            app:argType="string"
+            android:defaultValue="null" />
+        <argument
+            android:name="userImage"
+            app:argType="string"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeRequestsFragment"
+        android:name="com.example.mytraveldiary.view.admin.PlaceRequestsFragment"
+        android:label="PlaceRequestsFragment" >
+        <action
+            android:id="@+id/action_placeRequestsFragment_to_placeRequestDetailFragment"
+            app:destination="@id/placeRequestDetailFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/allCommentsFragment"
+        android:name="com.example.mytraveldiary.view.admin.AllCommentsFragment"
+        android:label="AllCommentsFragment" />
+    <fragment
+        android:id="@+id/placeRequestDetailFragment"
+        android:name="com.example.mytraveldiary.view.admin.PlaceRequestDetailFragment"
+        android:label="PlaceRequestDetailFragment" >
+        <action
+            android:id="@+id/action_placeRequestDetailFragment_to_adminMainFragment"
+            app:destination="@id/adminMainFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/slide_out" />
+        <argument
+            android:name="requestID"
+            app:argType="string"
+            android:defaultValue="null" />
+
+    </fragment>
+
+</navigation>

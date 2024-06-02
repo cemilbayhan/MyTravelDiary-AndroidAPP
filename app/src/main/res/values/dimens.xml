@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_5d">8sp</dimen>
+    <dimen name="text_7d">10sp</dimen>
+    <dimen name="text_9d">12sp</dimen>
+    <dimen name="text_11d">14sp</dimen>
+    <dimen name="text_13d">16sp</dimen>
+    <dimen name="text_15d">18sp</dimen>
+    <dimen name="text_17d">20sp</dimen>
+    <dimen name="text_19d">22sp</dimen>
+    <dimen name="text_21d">24sp</dimen>
+    <dimen name="text_23d">26sp</dimen>
+    <dimen name="text_25d">28sp</dimen>
+    <dimen name="text_27d">30sp</dimen>
+    <dimen name="text_29d">32sp</dimen>
+    <dimen name="text_31d">34sp</dimen>
+    <dimen name="text_33d">36sp</dimen>
+    <dimen name="text_35d">38sp</dimen>
+    <dimen name="text_37d">40sp</dimen>
+    <dimen name="text_39d">42sp</dimen>
+    <dimen name="text_41d">44sp</dimen>
+    <dimen name="text_43d">46sp</dimen>
+    <dimen name="text_45d">48sp</dimen>
+    <dimen name="text_47d">50sp</dimen>
+    <dimen name="text_49d">52sp</dimen>
+    <dimen name="text_51d">54sp</dimen>
+    <dimen name="text_53d">56sp</dimen>
+    <dimen name="text_56d">58sp</dimen>
+    <dimen name="text_57d">60sp</dimen>
+    <dimen name="text_59d">62sp</dimen>
+    <dimen name="text_61d">64sp</dimen>
+    <dimen name="_12ssp">14sp</dimen>
+    <dimen name="_14ssp">16sp</dimen>
+    <dimen name="_10ssp">12sp</dimen>
+    <dimen name="_7ssp">9sp</dimen>
+    <dimen name="_40ssp">52sp</dimen>
+    <dimen name="_20ssp">24sp</dimen>
+    <dimen name="_13ssp">16sp</dimen>
+    <dimen name="_7sdp">10sp</dimen>
+    <dimen name="_40sdp">44sp</dimen>
+    <dimen name="_12sdp">15sp</dimen>
+
+</resources>

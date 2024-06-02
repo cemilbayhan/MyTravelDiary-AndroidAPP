@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.app.NewPlaceFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/newPlaceConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/closeOneFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/text_5d"
+                android:src="@drawable/ic_close"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/wallpaperdImage"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:padding="@dimen/text_5d"
+                android:src="@drawable/splash_app_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/placeNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/text_21d"
+                android:gravity="center_horizontal"
+                android:text="@string/placeName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/wallpaperdImage" />
+
+            <EditText
+                android:id="@+id/placeName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:maxLines="1"
+                android:inputType="text"
+                android:hint="@string/inputPlaceName"
+                app:layout_constraintBottom_toBottomOf="@id/placeNameTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/placeNameTextView"
+                app:layout_constraintTop_toTopOf="@id/placeNameTextView" />
+
+            <TextView
+                android:id="@+id/placeAdressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/text_21d"
+                android:gravity="center_horizontal"
+                android:maxLines="2"
+                android:text="@string/placeAdress"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/placeName" />
+
+            <EditText
+                android:id="@+id/placeAdress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:inputType="text"
+                android:hint="@string/inputPlaceAdress"
+                app:layout_constraintBottom_toBottomOf="@id/placeAdressTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/placeAdressTextView"
+                app:layout_constraintTop_toTopOf="@id/placeAdressTextView" />
+
+            <TextView
+                android:id="@+id/placePriceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/text_21d"
+                android:gravity="center_horizontal"
+                android:text="@string/placePrice"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/placeAdress" />
+
+            <EditText
+                android:id="@+id/placePrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:inputType="text"
+                android:hint="@string/inputPlacePrice"
+                app:layout_constraintBottom_toBottomOf="@id/placePriceTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/placePriceTextView"
+                app:layout_constraintTop_toTopOf="@id/placePriceTextView" />
+
+            <TextView
+                android:id="@+id/placeCategoryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/text_21d"
+                android:gravity="center_horizontal"
+                android:text="@string/placeCategory"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/placePrice" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:entries="@array/category"
+                app:layout_constraintBottom_toBottomOf="@id/placeCategoryTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/placeCategoryTextView"
+                app:layout_constraintTop_toTopOf="@id/placeCategoryTextView"/>
+
+            <TextView
+                android:id="@+id/placeCityTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/text_21d"
+                android:gravity="center_horizontal"
+                android:text="@string/placeCity"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerCategory" />
+
+            <Spinner
+                android:id="@+id/spinnerCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:entries="@array/turkey_cities"
+                app:layout_constraintBottom_toBottomOf="@id/placeCityTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/placeCityTextView"
+                app:layout_constraintTop_toTopOf="@id/placeCityTextView"/>
+
+            <TextView
+                android:id="@+id/placeImagesTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/text_21d"
+                android:gravity="center_horizontal"
+                android:text="@string/placeImages"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerCity" />
+
+            <Button
+                android:id="@+id/placeImages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/placeImages"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/placeImagesTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/placeImagesTextView"
+                app:layout_constraintTop_toTopOf="@id/placeImagesTextView" />
+
+            <TextView
+                android:id="@+id/placeDescriptionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/text_31d"
+                android:gravity="center_horizontal"
+                android:text="@string/placeDescription"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/placeImages" />
+
+            <EditText
+                android:id="@+id/placeDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/inputPlaceDescription"
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:scrollbars="vertical"
+                app:layout_constraintBottom_toBottomOf="@id/placeDescriptionTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/placeDescriptionTextView"
+                app:layout_constraintTop_toTopOf="@id/placeDescriptionTextView"/>
+
+            <Button
+                android:id="@+id/sendAdmin"
+                style="@style/buttonStyle"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="@dimen/text_13d"
+                android:text="@string/requestPlace"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/closeFragment"
+                app:layout_constraintTop_toBottomOf="@id/placeDescription"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/closeFragment"
+                style="@style/buttonStyle"
+                android:layout_marginEnd="8dp"
+                android:text="@string/goBack"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/sendAdmin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sendAdmin" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/newPlaceProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/lavender_blue"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

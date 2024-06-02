@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.app.ProfileFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/userViewConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/userImagePP"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/nophoto_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/userNameSurnameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center_horizontal"
+            app:layout_constraintEnd_toStartOf="@id/userEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userImagePP" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="@id/userNameSurnameText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/userNameSurnameText"
+            app:layout_constraintTop_toTopOf="@id/userNameSurnameText" />
+
+        <View
+            android:id="@+id/topLine"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/text_25d"
+            android:background="#000000"
+            app:layout_constraintBottom_toTopOf="@id/commenttextTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userEmail" />
+
+        <TextView
+            android:id="@+id/commenttextTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/text_5d"
+            android:paddingTop="@dimen/text_5d"
+            android:paddingEnd="3dp"
+            android:text="@string/yourComments"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/midLine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topLine" />
+
+        <TextView
+            android:id="@+id/commentCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0)"
+            app:layout_constraintBottom_toBottomOf="@id/commenttextTextView"
+            app:layout_constraintStart_toEndOf="@id/commenttextTextView" />
+
+        <TextView
+            android:id="@+id/rateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:paddingTop="@dimen/text_5d"
+            android:paddingEnd="@dimen/text_5d"
+            android:text="@string/showComments"
+            app:drawableStartCompat="@drawable/ic_comment"
+            app:layout_constraintBottom_toBottomOf="@id/midLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/topLine" />
+
+        <View
+            android:id="@+id/midLine"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#000000"
+            app:layout_constraintEnd_toEndOf="@id/commentCountTextView"
+            app:layout_constraintStart_toStartOf="@id/commenttextTextView"
+            app:layout_constraintTop_toBottomOf="@id/commenttextTextView" />
+
+
+        <ImageView
+            android:id="@+id/placeImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/midLine"
+            app:srcCompat="@drawable/not_found" />
+
+        <TextView
+            android:id="@+id/placeNameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="10dp"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toStartOf="@id/commentDateText"
+            app:layout_constraintStart_toEndOf="@+id/placeImg"
+            app:layout_constraintTop_toTopOf="@+id/placeImg"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <TextView
+            android:id="@+id/commentDateText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="2dp"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/placeImg" />
+
+        <LinearLayout
+            android:id="@+id/starLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            app:layout_constraintBottom_toTopOf="@id/userComment"
+            app:layout_constraintStart_toEndOf="@id/placeImg"
+            app:layout_constraintTop_toBottomOf="@id/placeNameText">
+
+            <ImageView
+                android:id="@+id/starOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_starfull" />
+
+            <ImageView
+                android:id="@+id/starTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_starfull" />
+
+            <ImageView
+                android:id="@+id/starThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_starfull" />
+
+            <ImageView
+                android:id="@+id/starFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_starfull" />
+
+            <ImageView
+                android:id="@+id/starFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_starfull" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/placeRateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/noComments"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@id/userComment"
+            app:layout_constraintStart_toEndOf="@id/starLayout"
+            app:layout_constraintTop_toBottomOf="@id/placeNameText"
+            app:layout_constraintVertical_bias="0.45" />
+
+            <TextView
+                android:id="@+id/userComment"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="start"
+                android:paddingStart="@dimen/text_7d"
+                android:paddingEnd="@dimen/text_7d"
+                android:paddingBottom="@dimen/text_7d"
+                android:scrollbars="vertical"
+                android:text="TextView"
+                android:textSize="@dimen/text_9d"
+                app:layout_constraintEnd_toStartOf="@id/deleteIMG"
+                app:layout_constraintBottom_toTopOf="@id/bottomLine"
+                app:layout_constraintStart_toEndOf="@+id/placeImg"
+                app:layout_constraintTop_toBottomOf="@id/placeRateText" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/deleteIMG"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_delete"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/commentDateText" />
+
+        <View
+            android:id="@+id/bottomLine"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="100dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toTopOf="@id/addLocationButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/placeNameText" />
+
+        <Button
+            android:id="@+id/addLocationButton"
+            style="@style/buttonStyle"
+            android:text="@string/newPlaceBTN"
+            app:layout_constraintBottom_toTopOf="@id/logoutButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottomLine" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            style="@style/buttonStyle"
+            android:text="@string/exit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addLocationButton" />
+
+        <TextView
+            android:id="@+id/noCommentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noCommentsUser"
+            android:textColor="@color/red"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/bottomLine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/midLine" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/profileProgressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/lavender_blue"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Travel Diary</string>
+    <string name="hidden" translatable="false">************</string>
+    <string name="error">Hata</string>
+    <string name="ok">Tamam</string>
+    <string name="fill"> Lütfen Boş bırakmayınız</string>
+    <string name="failed">Hatalı giriş</string>
+    <string name="UIerror" translatable="false">UIstate unhandled:</string>
+    <string name="passNotMatch">Şifreleriniz eşleşmiyor</string>
+
+    <!-- OnBoard Strings -->
+    <string name="txt_custom_string"><font color='#292C3D'><br>Keşfetmeye</br></font> <font color='#ff4760'>\thazır mısın?</font> </string>
+    <string name="skipOnBoard">Tanıtımı Atla</string>
+    <string name="nextOnBoard">Sıradaki</string>
+    <string name="finishOnBoard">Hadi Başlayalım</string>
+
+    <!-- BottomMenu Strings -->
+    <string name="profileMenuText">Profil</string>
+    <string name="homePageMenuText">Ana Sayfa</string>
+
+    <!-- MainFragment Strings -->
+    <string name="search">Ara</string>
+    <string name="museum">Müzeler</string>
+    <string name="natural">Doğal Alanlar</string>
+    <string name="historical">Tarihi Alanlar</string>
+    <string name="beach">Sahil ve Kumsallar</string>
+    <string name="favoritesMenuText">Favoriler</string>
+    <string name="mainFragmentMainText">Hoşgeldin meraklı, aşağıda senin için kategoriler sıraladık. Bunlardan merak ettiğine tıklayıp o kategorideki yerlere göz atabilirsin. Veya Arama yapıp bir sürü görmek isteyeceğin yerlere ulaşabilirsin! Ne duruyorsun?</string>
+
+    <!-- SearchFragment Strings -->
+    <string name="searchText">Merakınızı giderelim?</string>
+    <string name="cantFoundFood">Herhangi bir sonuç bulunamadı</string>
+    <string name="needLogin">Bu işlem için önce giriş yapmanız gerekmektedir!</string>
+    <string name="exit">Çıkış Yap\n</string>
+    <string name="noComments">Yorum yapılmadı</string>
+    <string name="countComment">"%1$s (%2$s değerlendirme)"</string>
+
+    <!-- ProfileFragments Strings -->
+    <string name="login">Giriş Yap</string>
+    <string name="logout">Çıkış yap</string>
+    <string name="register">Kayıt Ol</string>
+    <string name="newPlaceBTN">Bildiğiniz bir yeri eklemek için tıklayın</string>
+    <string name="yourComments">Yorumlarınız</string>
+    <string name="showComments">Yorumlarımı göster</string>
+    <string name="noCommentsUser">Hiçbir yorumunuz bulunamadı</string>
+
+
+    <!---    loginFragment Strings     -->
+    <string name="loginpagewelcomemessage">My Travel Diary Giriş Ekranı</string>
+    <string name="btngiris">Giriş Yap</string>
+    <string name="loginPageSignUpText">Üye değil misin?</string>
+    <string name="forgotPassword"> Şifremi Unuttum </string>
+    <string name="passwordInput">Şifreniz</string>
+    <string name="email">Email</string>
+
+    <!---    Register fragment Strings     -->
+    <string name="registerPageWelcomeMessage">My Travel Diary Kayıt Ekranı</string>
+    <string name="nameSurname">İsim Soyisim </string>
+    <string name="signUp">Kayıt Ol</string>
+    <string name="passwordAgain">Şifre Tekrarı</string>
+    <string name="goBack">Geri Dön</string>
+    <string name="password">Şifre(En az 6 karakter)</string>
+    <string name="emailRegister">Email(**@*.com/tr/net vb.)</string>
+    <string name="registerSuccess">Kayıt Başarılı. Lütfen giriş yapınız</string>
+
+    <!---    forgotPassword dialog Strings     -->
+    <string name="infoForgotPassword"> E-Mailinizi girip Gönder tuşuna basınız. </string>
+    <string name="closeDialog">Kapat</string>
+    <string name="sendMail">Gönder</string>
+    <string name="checkMail">Lütfen posta kutunuzu kontrol ediniz.</string>
+
+    <!---   favorite fragment strings     -->
+    <string name="haveNotFav">Kitaplığa herhangi bir yer eklemediniz.</string>
+    <string name="favCount">Favorilerinizde %1$s tane mekan listelenmiştir</string>
+
+    <!---   PlaceComment fragment strings     -->
+    <string name="commentCount">"%1$s Adet değerlendirme mevcut"</string>
+    <string name="noCommentFound">"Yorum bulunamadı"</string>
+    <string name="newComment">Buraya gittiniz mi? \nLütfen yorum yaparak sizden sonraki kullanıcıların bilgilenmesini sağlayın.\nYeni yorum yapmak için tıklayabilirsiniz.</string>
+
+    <!---   NewComment DialogFragment strings     -->
+    <string name="sendComment">Yorum yap</string>
+    <string name="infoComment">Puanınızı ve yorumunuzu girip\n<b>Yorum Yap</b> tuşuna basınız</string>
+    <string name="typeComment">Yorumunuzu giriniz.(Opsiyonel)</string>
+    <string name="publishEveryone">Herkese Açık Yayınlanıyor</string>
+    <string name="commentSuccess">Yorum yapma başarılı</string>
+
+    <!---  UserCommentAdapter strings     -->
+    <string name="areYouSureToDelete">Silmek istediğinizden Emin Misiniz?</string>
+    <string name="delete">Sil</string>
+    <string name="decline">Vazgeç</string>
+
+    <!---  AdminMainFragment strings     -->
+    <string name="placeRequestCheck">Yeni mekan istekleri</string>
+    <string name="commentRequestCheck">Yorumlar</string>
+
+    <string-array name="turkey_cities">
+        <item>Adana</item>
+        <item>Adıyaman</item>
+        <item>Afyonkarahisar</item>
+        <item>Ağrı</item>
+        <item>Aksaray</item>
+        <item>Amasya</item>
+        <item>Ankara</item>
+        <item>Antalya</item>
+        <item>Ardahan</item>
+        <item>Artvin</item>
+        <item>Aydın</item>
+        <item>Balıkesir</item>
+        <item>Bartın</item>
+        <item>Batman</item>
+        <item>Bayburt</item>
+        <item>Bilecik</item>
+        <item>Bingöl</item>
+        <item>Bitlis</item>
+        <item>Bolu</item>
+        <item>Burdur</item>
+        <item>Bursa</item>
+        <item>Çanakkale</item>
+        <item>Çankırı</item>
+        <item>Çorum</item>
+        <item>Denizli</item>
+        <item>Diyarbakır</item>
+        <item>Düzce</item>
+        <item>Edirne</item>
+        <item>Elazığ</item>
+        <item>Erzincan</item>
+        <item>Erzurum</item>
+        <item>Eskişehir</item>
+        <item>Gaziantep</item>
+        <item>Giresun</item>
+        <item>Gümüşhane</item>
+        <item>Hakkâri</item>
+        <item>Hatay</item>
+        <item>Iğdır</item>
+        <item>Isparta</item>
+        <item>İstanbul</item>
+        <item>İzmir</item>
+        <item>Kahramanmaraş</item>
+        <item>Karabük</item>
+        <item>Karaman</item>
+        <item>Kars</item>
+        <item>Kastamonu</item>
+        <item>Kayseri</item>
+        <item>Kırıkkale</item>
+        <item>Kırklareli</item>
+        <item>Kırşehir</item>
+        <item>Kilis</item>
+        <item>Kocaeli</item>
+        <item>Konya</item>
+        <item>Kütahya</item>
+        <item>Malatya</item>
+        <item>Manisa</item>
+        <item>Mardin</item>
+        <item>Mersin</item>
+        <item>Muğla</item>
+        <item>Muş</item>
+        <item>Nevşehir</item>
+        <item>Niğde</item>
+        <item>Ordu</item>
+        <item>Osmaniye</item>
+        <item>Rize</item>
+        <item>Sakarya</item>
+        <item>Samsun</item>
+        <item>Siirt</item>
+        <item>Sinop</item>
+        <item>Sivas</item>
+        <item>Şanlıurfa</item>
+        <item>Şırnak</item>
+        <item>Tekirdağ</item>
+        <item>Tokat</item>
+        <item>Trabzon</item>
+        <item>Tunceli</item>
+        <item>Uşak</item>
+        <item>Van</item>
+        <item>Yalova</item>
+        <item>Yozgat</item>
+        <item>Zonguldak</item>
+    </string-array>
+    <string name="permissionDenied">Erişim izni reddedildi</string>
+    <string-array name="category">
+        <item>Tarihi Alanlar</item>
+        <item>Doğal alanlar</item>
+        <item>Sahil ve Kumsallar</item>
+        <item>Müzeler</item>
+    </string-array>
+
+
+    <string name="placeName">Yer ismi</string>
+    <string name="inputPlaceName">Yer ismi giriniz</string>
+    <string name="placeAdress">Adresi</string>
+    <string name="inputPlaceAdress">Adresi giriniz</string>
+    <string name="placePrice">Güncel fiyat</string>
+    <string name="inputPlacePrice">Güncel fiyat giriniz</string>
+    <string name="placeCategory">Kategori seçiniz</string>
+    <string name="placeCity">Şehir seçiniz</string>
+    <string name="placeImages">Fotoğraf(lar)ı seçiniz</string>
+    <string name="placeDescription">Açıklama </string>
+    <string name="inputPlaceDescription">Eklenilecek yer hakkında detaylı açıklama yapınız</string>
+    <string name="requestPlace">Ekleme isteği gönder</string>
+    <string name="requestPlaceSuccess">Ekleme isteği başarıyla gönderildi.</string>
+
+    <string name="category">Kategoriye göre ara</string>
+    <string name="city">Şehir ismine göre ara</string>
+    <string name="filtreOptions">Filtre Seçenekleri</string>
+
+    <string-array name="spinnerCategory">
+        <item>Tümü</item>
+        <item>Tarihi Alanlar</item>
+        <item>Doğal Alanlar</item>
+        <item>Sahil ve Kumsallar</item>
+        <item>Müzeler</item>
+    </string-array>
+    <string-array name="spinnerCity">
+        <item>Hepsi</item>
+        <item>Adana</item>
+        <item>Adıyaman</item>
+        <item>Afyonkarahisar</item>
+        <item>Ağrı</item>
+        <item>Aksaray</item>
+        <item>Amasya</item>
+        <item>Ankara</item>
+        <item>Antalya</item>
+        <item>Ardahan</item>
+        <item>Artvin</item>
+        <item>Aydın</item>
+        <item>Balıkesir</item>
+        <item>Bartın</item>
+        <item>Batman</item>
+        <item>Bayburt</item>
+        <item>Bilecik</item>
+        <item>Bingöl</item>
+        <item>Bitlis</item>
+        <item>Bolu</item>
+        <item>Burdur</item>
+        <item>Bursa</item>
+        <item>Çanakkale</item>
+        <item>Çankırı</item>
+        <item>Çorum</item>
+        <item>Denizli</item>
+        <item>Diyarbakır</item>
+        <item>Düzce</item>
+        <item>Edirne</item>
+        <item>Elazığ</item>
+        <item>Erzincan</item>
+        <item>Erzurum</item>
+        <item>Eskişehir</item>
+        <item>Gaziantep</item>
+        <item>Giresun</item>
+        <item>Gümüşhane</item>
+        <item>Hakkâri</item>
+        <item>Hatay</item>
+        <item>Iğdır</item>
+        <item>Isparta</item>
+        <item>İstanbul</item>
+        <item>İzmir</item>
+        <item>Kahramanmaraş</item>
+        <item>Karabük</item>
+        <item>Karaman</item>
+        <item>Kars</item>
+        <item>Kastamonu</item>
+        <item>Kayseri</item>
+        <item>Kırıkkale</item>
+        <item>Kırklareli</item>
+        <item>Kırşehir</item>
+        <item>Kilis</item>
+        <item>Kocaeli</item>
+        <item>Konya</item>
+        <item>Kütahya</item>
+        <item>Malatya</item>
+        <item>Manisa</item>
+        <item>Mardin</item>
+        <item>Mersin</item>
+        <item>Muğla</item>
+        <item>Muş</item>
+        <item>Nevşehir</item>
+        <item>Niğde</item>
+        <item>Ordu</item>
+        <item>Osmaniye</item>
+        <item>Rize</item>
+        <item>Sakarya</item>
+        <item>Samsun</item>
+        <item>Siirt</item>
+        <item>Sinop</item>
+        <item>Sivas</item>
+        <item>Şanlıurfa</item>
+        <item>Şırnak</item>
+        <item>Tekirdağ</item>
+        <item>Tokat</item>
+        <item>Trabzon</item>
+        <item>Tunceli</item>
+        <item>Uşak</item>
+        <item>Van</item>
+        <item>Yalova</item>
+        <item>Yozgat</item>
+        <item>Zonguldak</item>
+    </string-array>
+
+    <string name="adminPanelText">Admin Paneli</string>
+    <string name="placeRequestsAdminText">Mekan İstekleri</string>
+    <string name="noPlaceRequestsAdminText">İstek Bulunamadı</string>
+    <string name="accept">Onayla</string>
+    <string name="success">İşlem başarılı</string>
+    <string name="secondScreenOnBoardText">Keşfettiğiniz yeri kullanıcı girişi yaparak <font color='#292C3D'><br>kayıt altında</br></font> tutun!</string>
+    <string name="thirdScreenOnBoardOneText">Seyahat hayalleriniz aklınızda değil <font color='#3481df'><br>My Travel Diary\'de</br></font> kalsın!</string>
+    <string name="thirdScreenOnBoardTwoText">Yorum yapma özelliğimiz sayesinde düşüncelerinizi özgürce paylaşabilirsiniz</string>
+    <string name="fourthScreenOnBoardOneText">Güzel anılar yaşadığınız\nbir yer mi var?</string>
+    <string name="fourthScreenOnBoardTwoText">My Travel Diary bu seyahat rüyanızı keşfetsin!\nProfilinizde bunu bizimle paylaşabilirsiniz.</string>
+    <string name="fifthScreenOnBoardOneText">Kayıt olmasanızda uygulamamızda serbestçe dolaşabilirsiniz!</string>
+    <string name="fifthScreenOnBoardTwoText">Kayıt olmak için vakit öldürmeye gerek yok!\nGezmek <font color='#ff4760'><br>My Travel Diary</br></font> ile çok kolay!</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "915319056563",
+    "project_id": "mytraveldiary-f1971",
+    "storage_bucket": "mytraveldiary-f1971.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915319056563:android:4dc2e9ec070e18667b28c6",
+        "android_client_info": {
+          "package_name": "com.example.mytraveldiary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgVoFAlLtOu93VrrouCKe1piplwLV4vHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

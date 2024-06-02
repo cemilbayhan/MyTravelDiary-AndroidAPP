@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Travel Diary</string>
+
+    <!-- OnBoard Strings -->
+    <string name="skipOnBoard">Tanıtımı Atla</string>
+    <string name="nextOnBoard">Sıradaki</string>
+
+    <!-- BottomMenu Strings -->
+    <string name="profileMenuText">Profil</string>
+    <string name="homePageMenuText">Ana Sayfa</string>
+
+    <!-- MainFragment Strings -->
+    <string name="login">Giriş Yap</string>
+    <string name="search">Ara</string>
+    <string name="museum">Müzeler</string>
+    <string name="camping">Kamp Alanları</string>
+    <string name="forest">Botanik bahçeleri ve parklar</string>
+    <string name="beach">Sahil ve Kumsallar</string>
+    <string name="favoritesMenuText">Favoriler</string>
+    <string name="mainFragmentMainText">Hoşgeldin meraklı, Aşağıda senin için kategoriler sıraladık. Bunlardan merak ettiğine tıklayıp o kategorideki yerlere göz atabilirsin. Veya Arama yapıp bir sürü görmek isteyeceğin yerlere ulaşabilirsin! Ne duruyorsun?</string>
+    <string name="cantFoundFood">Herhangi bir sonuç bulunamadı</string>
+    <string name="exit">Çıkış Yap\n</string>
+    <string name="loginpagewelcomemessage">Bul Keşfet Giriş Ekranı</string>
+    <string name="yourComments">Yorumlarınız</string>
+    <string name="typeComment">Yorumunuzu giriniz.(Opsiyonel)</string>
+    <string name="publishEveryone">Herkese Açık Yayınlanıyor.</string>
+    <string name="areYouSureToDelete">Silmek istediğinizden Emin Misiniz?</string>
+    <string name="finishOnBoard">Hadi Başlayalım</string>
+
+
+</resources>

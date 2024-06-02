@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#039503</color>
+    <color name="blue">#0000FF</color>
+
+
+    Açık pembeden kahverengiye hafif tonlar
+    <color name="lavender_blue">#C9C9EE</color>
+    <color name="heliotrope_gray">#BAABBD</color>
+    <color name="mountbatten_pink">#9F838C</color>
+    <color name="cinereous">#8D7471</color>
+    <color name="rocket_metallic">#816F68</color>
+
+    Koyu açık karışık tonlar
+    <color name="black_coffe">#32292F</color>
+    <color name="middle_bluegreen">#99E1D9</color>
+    <color name="cadet_blue">#70ABAF</color>
+    <color name="umber">#705D56</color>
+    <color name="mint_cream">#F0F7F4</color>
+
+    <color name="crimson">#DD1B42</color>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="common_text_color">#292C3D</color>
+    <color name="pink">#ff4760</color>
+    <color name="layout_background">#FCFCFD</color>
+    <color name="title_color">#292C3D</color>
+    <color name="uncheck_icon_color">#C2C5D6</color>
+    <color name="detail_text_color">#0A2753</color>
+    <color name="detail_city_txt_color">#39414B</color>
+    <color name="detail_transparent">#59FFFFFF</color>
+    <color name="blue_title_color">#0048F0</color>
+
+</resources>
